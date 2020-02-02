@@ -574,10 +574,6 @@ subroutine xc_get_vxc(der, xcs, st, rho, ispin, ioniz_pot, qtot, vxc, ex, ec, de
   !	end do
   !end do
   
-  do ip = 1, der%mesh%np
-	vxc(ip, 1) = 0
-  end do
-  
   if (gga) then
 	  do ip = 1, der%mesh%np
 		idx = ip - 1
